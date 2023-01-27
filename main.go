@@ -11,6 +11,8 @@ import (
 func main() {
 	// Setup Database
 	d := db.Setup("ie-project.db")
+	st := db.NewStore(d)
+
 	e := echo.New()
 
 	e.GET("/hello", func(c echo.Context) error {
