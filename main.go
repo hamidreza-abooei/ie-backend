@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/hamidreza-abooei/ie-project/db"
+	"github.com/hamidreza-abooei/ie-project/monitor"
 	"github.com/labstack/echo/v4"
 )
 
@@ -12,6 +13,8 @@ func main() {
 	// Setup Database
 	d := db.Setup("ie-project.db")
 	st := db.NewStore(d)
+	mnt := monitor.NewMonitor(st, nil, 10)
+	sch, _ := monitor.NewScheduler(mnt)
 
 	e := echo.New()
 
