@@ -29,7 +29,7 @@ func CreateDB(dbName string) *gorm.DB {
 	db, err := gorm.Open("sqlite3", "./"+dbName)
 	// Error handling
 	if err != nil {
-		fmt.Printf("Error in opening Sqlite:", err)
+		fmt.Println("Error in opening Sqlite:", err)
 		return nil
 	}
 	return db

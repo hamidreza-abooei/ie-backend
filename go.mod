@@ -5,6 +5,9 @@ go 1.19
 require github.com/labstack/echo/v4 v4.10.0
 
 require (
+	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d // indirect
+	github.com/gammazero/deque v0.2.1 // indirect
+	github.com/gammazero/workerpool v1.1.3 // indirect
 	github.com/golang-jwt/jwt/v4 v4.4.3 // indirect
 	github.com/jinzhu/gorm v1.9.16 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
