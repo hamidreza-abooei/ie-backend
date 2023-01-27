@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"time"
 
 	"github.com/hamidreza-abooei/ie-project/db"
 	"github.com/hamidreza-abooei/ie-project/monitor"
@@ -15,6 +16,7 @@ func main() {
 	st := db.NewStore(d)
 	mnt := monitor.NewMonitor(st, nil, 10)
 	sch, _ := monitor.NewScheduler(mnt)
+	sch.DoWithIntervals(time.Minute * 3)
 
 	e := echo.New()
 
