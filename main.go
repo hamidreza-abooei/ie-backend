@@ -4,10 +4,13 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/hamidreza-abooei/ie-project/db"
 	"github.com/labstack/echo/v4"
 )
 
 func main() {
+	// Setup Database
+	d := db.Setup("ie-project.db")
 	e := echo.New()
 
 	e.GET("/hello", func(c echo.Context) error {

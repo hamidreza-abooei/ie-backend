@@ -9,5 +9,5 @@ type Url struct {
 	Adress      string `gorm:"unique_index:index_addr_user"`
 	Threshold   int
 	FailedTimes int
-	Requests    []Request `gorm:"foreignkey:url_id"`
+	Requests    []Request `gorm:"foreignkey:url_id"` // Personally I would resolve this one using DB query in order to database normalization
 }
