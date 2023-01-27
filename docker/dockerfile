@@ -1,0 +1,6 @@
+FROM ubuntu
+
+MAINTAINER Hamidreza-abooei <Hamidreza.abooei@gmail.com>
+
+RUN apt-get update
+
