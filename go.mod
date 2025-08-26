@@ -1,6 +1,6 @@
 module github.com/hamidreza-abooei/ie-project
 
-go 1.19
+go 1.23.0
 
 require (
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
@@ -8,7 +8,7 @@ require (
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/jinzhu/gorm v1.9.16
 	github.com/labstack/echo/v4 v4.10.0
-	golang.org/x/crypto v0.21.0
+	golang.org/x/crypto v0.35.0
 )
 
 require (
@@ -20,7 +20,7 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.2 // indirect
 	golang.org/x/net v0.23.0 // indirect
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	golang.org/x/time v0.2.0 // indirect
 )
